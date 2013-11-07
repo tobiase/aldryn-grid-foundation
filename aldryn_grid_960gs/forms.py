@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django import forms
-from aldryn_grid.models import Grid, GRID_CONFIG, DJANGOCMS_GRID_CHOICES
+from aldryn_grid_960gs.models import Grid, GRID_CONFIG, DJANGOCMS_GRID_CHOICES
 from django.utils.translation import ugettext_lazy as _
 
 NUM_COLUMNS = [

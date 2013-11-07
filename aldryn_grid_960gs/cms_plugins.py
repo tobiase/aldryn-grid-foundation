@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from cms.plugin_pool import plugin_pool
 from cms.plugin_base import CMSPluginBase
-from aldryn_grid.models import Grid, GridColumn, GRID_CONFIG
+from aldryn_grid_960gs.models import Grid, GridColumn, GRID_CONFIG
 from django.utils.translation import ugettext_lazy as _
-from aldryn_grid.forms import GridPluginForm
+from aldryn_grid_960gs.forms import GridPluginForm
 from cms.models import CMSPlugin
 
 
@@ -11,7 +11,7 @@ class GridPlugin(CMSPluginBase):
     model = Grid
     name = _('Multi Columns (grid)')
     module = _('Multi Columns')
-    render_template = 'aldryn_grid/grid.html'
+    render_template = 'aldryn_grid_960gs/grid.html'
     allow_children = True
     child_classes = ['GridColumnPlugin']
     form = GridPluginForm
@@ -36,7 +36,7 @@ class GridColumnPlugin(CMSPluginBase):
     model = GridColumn
     name = _('Grid Column')
     module = _('Multi Columns')
-    render_template = 'aldryn_grid/column.html'
+    render_template = 'aldryn_grid_960gs/column.html'
     allow_children = True
 
     def render(self, context, instance, placeholder):

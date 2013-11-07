@@ -1,7 +1,7 @@
-aldryn-grid
-===========
+Aldryn Grid (960 GS)
+====================
 
-A Multi Column Plugin for Aldryn, that uses a common grid system.
+A Multi Column Plugin for Aldryn based on the 960 grid system.
 
 
 Installation
@@ -11,9 +11,9 @@ Installation
 
 This plugin requires `django CMS` 2.4 or higher to be properly installed.
 
-* In your projects `virtualenv`_, run ``pip install aldryn-grid``.
-* Add ``'aldryn_grid'`` to your ``INSTALLED_APPS`` setting.
-* Run ``manage.py migrate aldryn_grid``.
+* In your projects `virtualenv`_, run ``pip install aldryn-grid-960gs``.
+* Add ``'aldryn_grid_960gs'`` to your ``INSTALLED_APPS`` setting.
+* Run ``manage.py migrate aldryn_grid_960gs``.
 
 
 Configure your grid

@@ -1,14 +1,13 @@
-# TODO: adapt settings to match your app
-name: Aldryn Grid
-package-name: aldryn-grid
-url: https://github.com/aldryn/aldryn-grid
+name: Aldryn Grid (960 GS)
+package-name: aldryn-grid-960gs
+url: https://github.com/aldryn/aldryn-grid-960gs
 author:
   name: Divio AG
   url: https://www.divio.ch
 installed-apps:
-  - aldryn-grid
-version: 0.0.1
-description: A Multi Column Plugin for Aldryn, that uses a common grid system.
+  - aldryn-grid-960gs
+version: 0.0.3
+description: A Multi Column Plugin for Aldryn based on the 960 grid system.
 license:
   name: BSD
   text: !literal-include LICENSE.txt
