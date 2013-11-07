@@ -1,0 +1,14 @@
+# TODO: adapt settings to match your app
+name: Aldryn Grid
+package-name: aldryn-grid
+url: https://github.com/aldryn/aldryn-grid
+author:
+  name: Divio AG
+  url: https://www.divio.ch
+installed-apps:
+  - aldryn-grid
+version: 0.0.1
+description: A Multi Column Plugin for Aldryn, that uses a common grid system.
+license:
+  name: BSD
+  text: !literal-include LICENSE.txt
