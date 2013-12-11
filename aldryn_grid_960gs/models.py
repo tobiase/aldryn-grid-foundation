@@ -7,9 +7,9 @@ from cms.models import CMSPlugin
 
 
 GRID_CONFIG = {'COLUMNS': 24, 'TOTAL_WIDTH': 960, 'GUTTER': 20}
-GRID_CONFIG.update(getattr(settings, 'DJANGOCMS_GRID_CONFIG', {}))
+GRID_CONFIG.update(getattr(settings, 'ALDRYN_GRID_960GS_CONFIG', {}))
 
-DJANGOCMS_GRID_CHOICES = [
+ALDRYN_GRID_960GS_CHOICES = [
     ('%s' % i, 'grid-%s' % i) for i in range(1, GRID_CONFIG['COLUMNS']+1)
 ]
 
@@ -23,7 +23,7 @@ class Grid(CMSPlugin):
 
 
 class GridColumn(CMSPlugin):
-    size = models.CharField(_('size'), choices=DJANGOCMS_GRID_CHOICES, default='1', max_length=50)
+    size = models.CharField(_('size'), choices=ALDRYN_GRID_960GS_CHOICES, default='1', max_length=50)
     custom_classes = models.CharField(_('custom classes'), max_length=200, blank=True)
 
     def __unicode__(self):
