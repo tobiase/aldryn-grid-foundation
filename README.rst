@@ -22,7 +22,7 @@ Configure your grid
 You can configure your grid using three numbers: total width of grid, number of
 columns, and width of the gutter in between each column::
 
-    DJANGOCMS_GRID_CONFIG = {
+    ALDRYN_GRID_960GS_CONFIG = {
         'COLUMNS': 24,
         'TOTAL_WIDTH': 960,
         'GUTTER': 20,
