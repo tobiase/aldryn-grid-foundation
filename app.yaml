@@ -1,13 +1,13 @@
-name: Aldryn Grid (960 GS)
-package-name: aldryn-grid-960gs
-url: https://github.com/aldryn/aldryn-grid-960gs
+name: Aldryn Grid (Foundation)
+package-name: aldryn-grid-foundation
+url: https://github.com/aldryn/aldryn-grid-foundation
 author:
   name: Divio AG
   url: https://www.divio.ch
 installed-apps:
-  - aldryn-grid-960gs
+  - aldryn-grid-foundation
 version: 0.0.3
-description: A Multi Column Plugin for Aldryn based on the 960 grid system.
+description: A Multi Column Plugin for Aldryn based on the Foundation grid system.
 license:
   name: BSD
   text: !literal-include LICENSE.txt

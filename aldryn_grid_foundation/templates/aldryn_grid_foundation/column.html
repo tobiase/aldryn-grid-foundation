@@ -1,0 +1,6 @@
+{% load cms_tags %}
+<div class="small-{{ column.size_small }}{% if column.size_large %} small-{{ column.size_large }}{% endif %}{% if column.custom_classes %} {{ column.custom_classes }}{% endif %} column">
+{% for plugin in column.child_plugin_instances %}
+	{% render_plugin plugin %}
+{% endfor %}
+</div>

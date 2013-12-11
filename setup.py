@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
-from aldryn_grid_960gs import __version__
+from aldryn_grid_foundation import __version__
 
 REQUIREMENTS = []
 
@@ -20,12 +20,12 @@ CLASSIFIERS = [
 ]
 
 setup(
-    name='aldryn-grid-960gs',
+    name='aldryn-grid-foundation',
     version=__version__,
-    description='Grid Plugin for Aldryn (960GS)',
+    description='Grid Plugin for Aldryn (Foundation)',
     author='Divio AG',
     author_email='info@divio.ch',
-    url='https://github.com/aldryn/aldryn-grid-960gs',
+    url='https://github.com/aldryn/aldryn-grid-foundation',
     packages=find_packages(exclude=[]),
     license='LICENSE.txt',
     platforms=['OS Independent'],
