@@ -10,8 +10,8 @@ NUM_COLUMNS = [
 
 class GridPluginForm(forms.ModelForm):
     create = forms.ChoiceField(choices=NUM_COLUMNS, label=_('Create Columns'), help_text=_('Create this number of columns inside'))
-    create_size_large = forms.ChoiceField(choices=ALDRYN_GRID_FOUNDATION_CHOICES, label=_('Column size'), help_text=('Width of created columns. You can still change the width of the column afterwards.'))
-    create_size_small = forms.ChoiceField(choices=ALDRYN_GRID_FOUNDATION_CHOICES, label=_('Column size (mobile)'), help_text=('Width of created columns. You can still change the width of the column afterwards.'), required=False)
+    create_size_small = forms.ChoiceField(choices=ALDRYN_GRID_FOUNDATION_CHOICES, label=_('Column size (mobile)'), help_text=('Width of created columns. You can still change the width of the column afterwards.'), required=True)
+    create_size_large = forms.ChoiceField(choices=ALDRYN_GRID_FOUNDATION_CHOICES, label=_('Column size'), help_text=('Width of created columns. You can still change the width of the column afterwards.'), required=False)
 
     class Meta:
         model = GridFoundation
