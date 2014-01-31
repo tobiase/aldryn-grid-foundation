@@ -5,7 +5,7 @@ from cms.models import CMSPlugin
 from cms.plugin_pool import plugin_pool
 from cms.plugin_base import CMSPluginBase
 
-from aldryn_grid_foundation.forms import GridPluginForm
+from aldryn_grid_foundation.forms import GridPluginForm, GridColumnPluginForm
 from aldryn_grid_foundation.models import GridFoundation, GridColumnFoundation, GRID_CONFIG
 
 
@@ -49,14 +49,13 @@ class GridColumnFoundationPlugin(CMSPluginBase):
     module = _('Multi Columns')
     render_template = 'aldryn_grid_foundation/column.html'
     allow_children = True
+    form = GridColumnPluginForm
 
     def render(self, context, instance, placeholder):
         context.update({
             'column': instance,
             'placeholder': placeholder,
         })
-        if 'width' in context:
-            context['width'] = context['width'] / GRID_CONFIG['COLUMNS'] * int(instance.size_large) - GRID_CONFIG['GUTTER'] / 2
         return context
 
 plugin_pool.register_plugin(GridFoundationPlugin)
