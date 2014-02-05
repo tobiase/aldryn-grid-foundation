@@ -6,7 +6,7 @@ author:
   url: https://www.divio.ch
 installed-apps:
   - aldryn_grid_foundation
-version: 0.0.4
+version: 0.0.5
 description: A Multi Column Plugin for Aldryn based on the Foundation grid system.
 license:
   name: BSD
