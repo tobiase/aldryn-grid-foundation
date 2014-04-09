@@ -11,7 +11,7 @@ from aldryn_grid_foundation.models import GridFoundation, GridColumnFoundation, 
 
 class GridFoundationPlugin(CMSPluginBase):
     model = GridFoundation
-    name = _('Multi Columns (grid)')
+    name = _('Grid Row (wrapper)')
     module = _('Multi Columns')
     render_template = 'aldryn_grid_foundation/grid.html'
     allow_children = True

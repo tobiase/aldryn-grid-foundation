@@ -22,8 +22,8 @@ class GridFoundation(CMSPlugin):
 
 
 class GridColumnFoundation(CMSPlugin):
-    size_small = models.IntegerField(_('size (mobile)'), choices=ALDRYN_GRID_FOUNDATION_CHOICES, default=GRID_CONFIG['COLUMNS'], blank=True, null=True)
-    size_large = models.IntegerField(_('size (desktop)'), choices=ALDRYN_GRID_FOUNDATION_CHOICES, default=8, blank=True, null=True)
+    size_small = models.IntegerField(_('size (mobile)'), choices=ALDRYN_GRID_FOUNDATION_CHOICES, default=0, blank=True, null=True)
+    size_large = models.IntegerField(_('size (desktop)'), choices=ALDRYN_GRID_FOUNDATION_CHOICES, default=0, blank=True, null=True)
     custom_classes = models.CharField(_('custom classes'), max_length=200, blank=True)
 
     def __unicode__(self):
