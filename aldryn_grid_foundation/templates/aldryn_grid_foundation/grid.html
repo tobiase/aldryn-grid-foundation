@@ -1,5 +1,5 @@
 {% load cms_tags %}
-<div class="row">
+<div class="row{% if grid.custom_classes %} {{ grid.custom_classes }}{% endif %}">
 {% for plugin in grid.child_plugin_instances %}
 	{% with forloop as parentloop %}{% render_plugin plugin %}{% endwith %}
 {% endfor %}
