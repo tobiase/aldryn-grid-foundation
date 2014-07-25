@@ -11,6 +11,7 @@ from .models import (
 )
 
 
+COLUMN_SIZE_CHOICES = [('','---------')] + ALDRYN_GRID_FOUNDATION_CHOICES
 NUM_COLUMNS = [
     (i, '%s' % i) for i in range(0, GRID_CONFIG['COLUMNS'])
 ]
@@ -23,19 +24,19 @@ class GridPluginForm(forms.ModelForm):
         help_text=_('Create this number of columns inside')
     )
     create_size_small = forms.ChoiceField(
-        choices=ALDRYN_GRID_FOUNDATION_CHOICES,
+        choices=COLUMN_SIZE_CHOICES,
         label=_('Column size (mobile)'),
         help_text=('Width of created columns. You can still change the width of the column afterwards.'),
         required=False
     )
     create_size_medium = forms.ChoiceField(
-        choices=ALDRYN_GRID_FOUNDATION_CHOICES,
+        choices=COLUMN_SIZE_CHOICES,
         label=_('Column size (tablet)'),
         help_text=('Width of created columns. You can still change the width of the column afterwards.'),
         required=False
     )
     create_size_large = forms.ChoiceField(
-        choices=ALDRYN_GRID_FOUNDATION_CHOICES,
+        choices=COLUMN_SIZE_CHOICES,
         label=_('Column size'),
         help_text=('Width of created columns. You can still change the width of the column afterwards.'),
         required=False
