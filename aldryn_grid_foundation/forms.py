@@ -11,7 +11,7 @@ from .models import (
 )
 
 
-COLUMN_SIZE_CHOICES = [('','---------')] + ALDRYN_GRID_FOUNDATION_CHOICES
+COLUMN_SIZE_CHOICES = [('', '---------')] + ALDRYN_GRID_FOUNDATION_CHOICES
 NUM_COLUMNS = [
     (i, '%s' % i) for i in range(0, GRID_CONFIG['COLUMNS'])
 ]

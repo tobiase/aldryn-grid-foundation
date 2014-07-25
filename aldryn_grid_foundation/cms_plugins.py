@@ -34,9 +34,9 @@ class GridFoundationPlugin(CMSPluginBase):
                     parent=obj,
                     placeholder=obj.placeholder,
                     language=obj.language,
-                    size_small=form.cleaned_data.get('create_size_small'),
-                    size_medium=form.cleaned_data.get('create_size_medium'),
-                    size_large=form.cleaned_data.get('create_size_large'),
+                    size_small=form.cleaned_data.get('create_size_small') or None,
+                    size_medium=form.cleaned_data.get('create_size_medium') or None,
+                    size_large=form.cleaned_data.get('create_size_large') or None,
                     position=CMSPlugin.objects.filter(parent=obj).count(),
                     plugin_type=GridColumnFoundationPlugin.__name__,
                 )
