@@ -1,5 +1,5 @@
 {% load cms_tags %}
-<div class="{% if column.size_small %}small-{{ column.size_small }}{% endif %}{% if column.size_large %} large-{{ column.size_large }}{% endif %}{% if column.custom_classes %} {{ column.custom_classes }}{% endif %} column">
+<div class="{% if column.size_small %}small-{{ column.size_small }}{% endif %}{% if column.size_medium %}medium-{{ column.size_medium }}{% endif %}{% if column.size_large %} large-{{ column.size_large }}{% endif %}{% if column.custom_classes %} {{ column.custom_classes }}{% endif %} column">
 {% for plugin in column.child_plugin_instances %}
 	{% render_plugin plugin %}
 {% empty %}

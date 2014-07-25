@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-11 13:39+0100\n"
+"POT-Creation-Date: 2014-07-25 23:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,50 +18,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: cms_plugins.py:14
-msgid "Multi Columns (grid)"
+msgid "Grid Row (wrapper)"
 msgstr ""
 
-#: cms_plugins.py:15 cms_plugins.py:49
+#: cms_plugins.py:15 cms_plugins.py:50
 msgid "Multi Columns"
 msgstr ""
 
-#: cms_plugins.py:48
+#: cms_plugins.py:49
 msgid "Grid Column"
 msgstr ""
 
-#: forms.py:12
+#: forms.py:22
 msgid "Create Columns"
 msgstr ""
 
-#: forms.py:12
+#: forms.py:23
 msgid "Create this number of columns inside"
 msgstr ""
 
-#: forms.py:13
-msgid "Column size"
-msgstr ""
-
-#: forms.py:14
+#: forms.py:27
 msgid "Column size (mobile)"
 msgstr ""
 
-#: models.py:13
+#: forms.py:33
+msgid "Column size (tablet)"
+msgstr ""
+
+#: forms.py:39
+msgid "Column size"
+msgstr ""
+
+#: forms.py:62
+msgid "Please provide either a size for mobile, tablet or desktop, or all."
+msgstr ""
+
+#: models.py:16
 msgid "columns"
 msgstr ""
 
-#: models.py:18 models.py:27
+#: models.py:29 models.py:40
 msgid "custom classes"
 msgstr ""
 
-#: models.py:21
+#: models.py:32
 #, python-format
 msgid "%s columns"
 msgstr ""
 
-#: models.py:25
+#: models.py:36
 msgid "size (mobile)"
 msgstr ""
 
-#: models.py:26
+#: models.py:37
+msgid "size (tablet)"
+msgstr ""
+
+#: models.py:38
 msgid "size (desktop)"
 msgstr ""
