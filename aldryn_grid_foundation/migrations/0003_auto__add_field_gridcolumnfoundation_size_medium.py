@@ -9,14 +9,14 @@ class Migration(SchemaMigration):
 
     def forwards(self, orm):
         # Adding field 'GridColumnFoundation.size_medium'
-        db.add_column(u'aldryn_grid_foundation_gridcolumnfoundation', 'size_medium',
+        db.add_column(u'cmsplugin_gridcolumnfoundation', 'size_medium',
                       self.gf('django.db.models.fields.IntegerField')(default=0, null=True, blank=True),
                       keep_default=False)
 
 
     def backwards(self, orm):
         # Deleting field 'GridColumnFoundation.size_medium'
-        db.delete_column(u'aldryn_grid_foundation_gridcolumnfoundation', 'size_medium')
+        db.delete_column(u'cmsplugin_gridcolumnfoundation', 'size_medium')
 
 
     models = {
